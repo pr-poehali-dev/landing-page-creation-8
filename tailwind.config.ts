@@ -33,9 +33,12 @@ export default {
 				},
 				brand: {
 					green: '#98AF41',
-					'dark-green': '#16A34A',
-					light: '#F8FAFC',
-					gray: '#1F2937'
+					'light-green': '#D1F68D',
+					peach: '#FFC9B5',
+					purple: '#7B599C',
+					orange: '#FC814A',
+					gray: '#1F2937',
+					'dark-gray': '#2D3748'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',

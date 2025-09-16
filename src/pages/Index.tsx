@@ -177,9 +177,9 @@ const Index = () => {
   const t = translations[language as keyof typeof translations];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+      <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -187,7 +187,7 @@ const Index = () => {
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center animate-pulse-glow animate-float">
                 <span className="text-white font-bold text-lg">MDC</span>
               </div>
-              <div className="text-xl font-bold text-brand-gray">Master's Distribution</div>
+              <div className="text-xl font-bold text-brand-dark-gray">Master's Distribution</div>
             </div>
 
             {/* Language Switcher */}
@@ -210,7 +210,7 @@ const Index = () => {
 
           {/* Navigation */}
           <nav className="mt-6">
-            <div className="flex flex-wrap justify-center space-x-8 text-sm font-medium text-gray-600">
+            <div className="flex flex-wrap justify-center space-x-8 text-sm font-medium text-brand-gray">
               <a href="#about" className="hover:text-primary transition-colors">{t.nav.about}</a>
               <a href="#approach" className="hover:text-primary transition-colors">{t.nav.approach}</a>
               <a href="#channels" className="hover:text-primary transition-colors">{t.nav.channels}</a>
@@ -224,7 +224,7 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20">
+      <section className="bg-gradient-to-br from-brand-dark-gray via-brand-gray to-brand-green py-24">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t.hero.title}
@@ -232,18 +232,18 @@ const Index = () => {
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.2s'}}>
             {t.hero.subtitle}
           </p>
-          <Button size="lg" className="bg-primary hover:bg-brand-dark-green text-white px-8 py-3 text-lg animate-bounce-in hover:scale-105 transition-transform duration-200" style={{animationDelay: '0.4s'}}>
+          <Button size="lg" className="bg-white text-brand-green hover:bg-brand-peach hover:text-white px-8 py-3 text-lg animate-bounce-in hover:scale-105 transition-all duration-300 font-semibold shadow-lg" style={{animationDelay: '0.4s'}}>
             {t.hero.cta}
           </Button>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-to-r from-green-50 to-blue-50">
+      <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
-              <h2 className="text-4xl font-bold text-brand-gray mb-6">{t.about.title}</h2>
+              <h2 className="text-4xl font-bold text-brand-dark-gray mb-6">{t.about.title}</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 {t.about.description}
               </p>
@@ -260,9 +260,9 @@ const Index = () => {
       </section>
 
       {/* Approach Section */}
-      <section id="approach" className="py-20 bg-gradient-to-r from-emerald-50 to-teal-50">
+      <section id="approach" className="py-20 bg-gradient-to-r from-brand-peach/20 to-brand-light-green/20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-brand-gray text-center mb-12 animate-fade-in">{t.approach.title}</h2>
+          <h2 className="text-4xl font-bold text-brand-dark-gray text-center mb-12 animate-fade-in">{t.approach.title}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {t.approach.items.map((item, index) => (
               <Card key={index} className="p-6 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 animate-bounce-in" style={{animationDelay: `${index * 0.1}s`}}>
@@ -270,7 +270,7 @@ const Index = () => {
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 animate-float" style={{animationDelay: `${index * 0.5}s`}}>
                     <Icon name={item.icon as any} size={32} className="text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-brand-gray mb-3">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-brand-dark-gray mb-3">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                 </CardContent>
               </Card>
@@ -280,7 +280,7 @@ const Index = () => {
       </section>
 
       {/* Sales Channels Section */}
-      <section id="channels" className="py-20 bg-gradient-to-l from-purple-50 to-pink-50">
+      <section id="channels" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-lg animate-slide-in-left hover:scale-105 transition-transform duration-300">
@@ -291,7 +291,7 @@ const Index = () => {
               />
             </div>
             <div className="animate-slide-in-right">
-              <h2 className="text-4xl font-bold text-brand-gray mb-6">{t.channels.title}</h2>
+              <h2 className="text-4xl font-bold text-brand-dark-gray mb-6">{t.channels.title}</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 {t.channels.description}
               </p>
@@ -301,11 +301,11 @@ const Index = () => {
       </section>
 
       {/* Assortment Section */}
-      <section id="assortment" className="py-20 bg-gradient-to-l from-rose-50 to-pink-50">
+      <section id="assortment" className="py-20 bg-gradient-to-l from-brand-purple/20 to-brand-orange/20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
-              <h2 className="text-4xl font-bold text-brand-gray mb-6">{t.assortment.title}</h2>
+              <h2 className="text-4xl font-bold text-brand-dark-gray mb-6">{t.assortment.title}</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 {t.assortment.description}
               </p>
@@ -322,7 +322,7 @@ const Index = () => {
       </section>
 
       {/* Partners Section */}
-      <section id="partners" className="py-20 bg-gradient-to-r from-yellow-50 to-orange-50">
+      <section id="partners" className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-brand-gray mb-6">{t.partners.title}</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -332,14 +332,14 @@ const Index = () => {
       </section>
 
       {/* News Section */}
-      <section id="news" className="py-20 bg-gradient-to-r from-cyan-50 to-blue-50">
+      <section id="news" className="py-20 bg-gradient-to-r from-brand-light-green/20 to-brand-green/20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-brand-gray text-center mb-12">{t.news.title}</h2>
+          <h2 className="text-4xl font-bold text-brand-dark-gray text-center mb-12">{t.news.title}</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {t.news.items.map((item, index) => (
               <Card key={index} className="p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 animate-fade-in" style={{animationDelay: `${index * 0.2}s`}}>
                 <CardContent className="pt-4">
-                  <h3 className="text-xl font-semibold text-brand-gray mb-3">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-brand-dark-gray mb-3">{item.title}</h3>
                   <p className="text-gray-500 text-sm">{item.date}</p>
                 </CardContent>
               </Card>
@@ -349,22 +349,22 @@ const Index = () => {
       </section>
 
       {/* Contacts Section */}
-      <section id="contacts" className="py-20 bg-gradient-to-br from-indigo-50 to-purple-50">
+      <section id="contacts" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-brand-gray text-center mb-12">{t.contacts.title}</h2>
+          <h2 className="text-4xl font-bold text-brand-dark-gray text-center mb-12">{t.contacts.title}</h2>
           <div className="max-w-2xl mx-auto text-center">
             <div className="grid md:grid-cols-3 gap-8">
               <div className="animate-bounce-in" style={{animationDelay: '0.1s'}}>
                 <Icon name="Phone" size={32} className="text-primary mx-auto mb-4 animate-float" />
-                <p className="text-lg font-semibold text-brand-gray">{t.contacts.phone}</p>
+                <p className="text-lg font-semibold text-brand-dark-gray">{t.contacts.phone}</p>
               </div>
               <div className="animate-bounce-in" style={{animationDelay: '0.2s'}}>
                 <Icon name="Mail" size={32} className="text-primary mx-auto mb-4 animate-float" style={{animationDelay: '0.5s'}} />
-                <p className="text-lg font-semibold text-brand-gray">{t.contacts.email}</p>
+                <p className="text-lg font-semibold text-brand-dark-gray">{t.contacts.email}</p>
               </div>
               <div className="animate-bounce-in" style={{animationDelay: '0.3s'}}>
                 <Icon name="MapPin" size={32} className="text-primary mx-auto mb-4 animate-float" style={{animationDelay: '1s'}} />
-                <p className="text-lg font-semibold text-brand-gray">{t.contacts.address}</p>
+                <p className="text-lg font-semibold text-brand-dark-gray">{t.contacts.address}</p>
               </div>
             </div>
           </div>
@@ -372,7 +372,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-brand-gray text-white py-12">
+      <footer className="bg-brand-dark-gray text-white py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
