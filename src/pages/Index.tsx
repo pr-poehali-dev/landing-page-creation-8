@@ -184,10 +184,11 @@ const Index = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex items-center space-x-3 animate-slide-in-left">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center animate-pulse-glow animate-float">
-                <span className="text-white font-bold text-lg">MDC</span>
-              </div>
-              <div className="text-xl font-bold text-brand-dark-gray">Master's Distribution</div>
+              <img 
+                src="https://cdn.poehali.dev/files/6aa9affc-8122-42f5-8ec8-1839e0f52230.png" 
+                alt="Master's Distribution Company" 
+                className="h-12 animate-float"
+              />
             </div>
 
             {/* Language Switcher */}
@@ -376,10 +377,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">MDC</span>
-              </div>
-              <span className="text-xl font-bold">Master's Distribution Company</span>
+              <img 
+                src="https://cdn.poehali.dev/files/6aa9affc-8122-42f5-8ec8-1839e0f52230.png" 
+                alt="Master's Distribution Company" 
+                className="h-8"
+              />
             </div>
             <p className="text-gray-400">© 2025 Master's Distribution Company. All rights reserved.</p>
           </div>
