@@ -177,7 +177,7 @@ const Index = () => {
   const t = translations[language as keyof typeof translations];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -224,12 +224,12 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-brand-light to-white py-20">
+      <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-brand-gray mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             {t.hero.title}
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             {t.hero.subtitle}
           </p>
           <Button size="lg" className="bg-primary hover:bg-brand-dark-green text-white px-8 py-3 text-lg">
@@ -260,7 +260,7 @@ const Index = () => {
       </section>
 
       {/* Approach Section */}
-      <section id="approach" className="py-20 bg-brand-light">
+      <section id="approach" className="py-20 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-brand-gray text-center mb-12">{t.approach.title}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -301,7 +301,7 @@ const Index = () => {
       </section>
 
       {/* Assortment Section */}
-      <section id="assortment" className="py-20 bg-brand-light">
+      <section id="assortment" className="py-20 bg-gray-100">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -332,7 +332,7 @@ const Index = () => {
       </section>
 
       {/* News Section */}
-      <section id="news" className="py-20 bg-brand-light">
+      <section id="news" className="py-20 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-brand-gray text-center mb-12">{t.news.title}</h2>
           <div className="grid md:grid-cols-3 gap-8">
