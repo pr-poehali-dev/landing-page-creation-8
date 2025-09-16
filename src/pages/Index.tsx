@@ -177,9 +177,9 @@ const Index = () => {
   const t = translations[language as keyof typeof translations];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -239,7 +239,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20">
+      <section id="about" className="py-20 bg-gradient-to-r from-green-50 to-blue-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -260,7 +260,7 @@ const Index = () => {
       </section>
 
       {/* Approach Section */}
-      <section id="approach" className="py-20 bg-gray-100">
+      <section id="approach" className="py-20 bg-gradient-to-r from-emerald-50 to-teal-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-brand-gray text-center mb-12">{t.approach.title}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -280,7 +280,7 @@ const Index = () => {
       </section>
 
       {/* Sales Channels Section */}
-      <section id="channels" className="py-20">
+      <section id="channels" className="py-20 bg-gradient-to-l from-purple-50 to-pink-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-lg">
@@ -301,7 +301,7 @@ const Index = () => {
       </section>
 
       {/* Assortment Section */}
-      <section id="assortment" className="py-20 bg-gray-100">
+      <section id="assortment" className="py-20 bg-gradient-to-l from-rose-50 to-pink-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -322,7 +322,7 @@ const Index = () => {
       </section>
 
       {/* Partners Section */}
-      <section id="partners" className="py-20">
+      <section id="partners" className="py-20 bg-gradient-to-r from-yellow-50 to-orange-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-brand-gray mb-6">{t.partners.title}</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -332,7 +332,7 @@ const Index = () => {
       </section>
 
       {/* News Section */}
-      <section id="news" className="py-20 bg-gray-100">
+      <section id="news" className="py-20 bg-gradient-to-r from-cyan-50 to-blue-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-brand-gray text-center mb-12">{t.news.title}</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -349,7 +349,7 @@ const Index = () => {
       </section>
 
       {/* Contacts Section */}
-      <section id="contacts" className="py-20">
+      <section id="contacts" className="py-20 bg-gradient-to-br from-indigo-50 to-purple-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-brand-gray text-center mb-12">{t.contacts.title}</h2>
           <div className="max-w-2xl mx-auto text-center">
