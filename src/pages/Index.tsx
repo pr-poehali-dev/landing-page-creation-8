@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import BackgroundPaths from "@/components/ui/background-paths";
 
 const Index = () => {
   const [language, setLanguage] = useState('ru');
@@ -225,8 +226,9 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-brand-dark-gray via-brand-gray to-brand-green py-24">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-to-br from-brand-dark-gray via-brand-gray to-brand-green py-24 relative">
+        <BackgroundPaths />
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t.hero.title}
           </h1>
