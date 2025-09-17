@@ -186,7 +186,7 @@ const Index = () => {
             {/* Logo */}
             <div className="flex items-center space-x-3 animate-slide-in-left">
               <img 
-                src="https://cdn.poehali.dev/files/6aa9affc-8122-42f5-8ec8-1839e0f52230.png" 
+                src="https://cdn.poehali.dev/files/8eaddf33-333d-4807-af85-a45da30e3ec1.png" 
                 alt="Master's Distribution Company" 
                 className="h-12 animate-float"
               />
@@ -380,7 +380,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
               <img 
-                src="https://cdn.poehali.dev/files/6aa9affc-8122-42f5-8ec8-1839e0f52230.png" 
+                src="https://cdn.poehali.dev/files/cf21e443-cf29-43da-bbb1-f7807031b34e.png" 
                 alt="Master's Distribution Company" 
                 className="h-8"
               />
